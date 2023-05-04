@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body
+        {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+        }
+        .button
+        {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            color: white;
+            background-color: black;
+            border-radius: 10px;
+            border-style: solid;
+            box-shadow: 2px 2px 2px 2px grey;
+            border-bottom-color: rgb(0, 187, 255);
+            padding: 20px 20px;
+        }
+        .container
+        {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            position: relative;
+            top: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" align="center">
+        <form action="/guest" method="GET">
+            <input type="submit" name="guest" value="guest" class="button">
+        </form>
+        <form action="/User" method="GET">
+            <input type="submit" name="user" value="user" class="button">
+        </form>
+        <form action="/Admin" method="GET">
+            <input type="submit" name="admin" value="admin" class="button">
+        </form>
+    </div>
+</body>
+</html>

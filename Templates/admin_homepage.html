@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body
+        {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+        }
+        #button1
+        {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            color: white;
+            background-color: black;
+            border-radius: 10px;
+            border-style: solid;
+            box-shadow: 2px 2px 2px 2px grey;
+            border-bottom-color: rgb(0, 179, 255);
+            width: 80px;
+            padding: 20px;
+        }
+        #button2
+        {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            color: white;
+            background-color: black;
+            border-radius: 10px;
+            border-style: solid;
+            box-shadow: 2px 2px 2px 2px grey;
+            border-bottom-color: rgb(0, 179, 255);
+            width: 90px;
+            padding: 20px;
+        }
+        #button3
+        {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            color: white;
+            background-color: black;
+            border-radius: 10px;
+            border-style: solid;
+            box-shadow: 2px 2px 2px 2px grey;
+            border-bottom-color: rgb(255, 64, 0);
+            width: 90px;
+            padding: 20px;
+        }
+        #button4
+        {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            color: white;
+            background-color: black;
+            border-radius: 10px;
+            border-style: solid;
+            box-shadow: 2px 2px 2px 2px grey;
+            border-bottom-color: rgb(255, 64, 0);
+            width: 120px;
+            padding: 20px;
+        }
+        #button5
+        {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            color: white;
+            background-color: black;
+            border-radius: 10px;
+            border-style: solid;
+            box-shadow: 2px 2px 2px 2px grey;
+            border-bottom-color: rgb(255, 64, 0);
+            width: 85px;
+            padding: 20px;
+        }
+        .textbox
+        {
+            border-radius: 10px;
+            box-shadow: 2px 2px 2px black;
+            border-style: none;
+            padding: 20px 20px;
+        }
+        p
+        {
+            word-wrap: break-word;
+        }
+        .forms
+        {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .container
+        {
+            display: flex;
+            flex-direction: row;
+            gap: 5%;
+            flex-wrap: wrap;
+            row-gap: 15px;
+        }
+        .newscontainer
+        {
+            border-style: none;
+            width: 50%;
+            padding: 4px 4px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 2px 2px black;
+        }
+        .wholecontainer
+        {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        address
+        {
+            color: white;
+            background-color: rgb(13, 84, 107);
+            width: 30%;
+            padding: 5px 5px;
+            text-shadow: 1px 1px 1px black;
+            border-radius: 10px;
+            box-shadow: 2px 2px 2px black;
+            word-wrap: break-word;
+        }
+        #Mail
+        {
+            color: white;
+            background-color: rgb(13, 107, 35);
+            width: 30%;
+            padding: 5px 5px;
+            text-shadow: 1px 1px 1px black;
+            border-radius: 10px;
+            box-shadow: 2px 2px 2px black;
+            word-wrap: break-word;
+        }
+        #Phone
+        {
+            color: white;
+            background-color: rgb(99, 13, 107);
+            width: 30%;
+            padding: 5px 5px;
+            text-shadow: 1px 1px 1px black;
+            border-radius: 10px;
+            box-shadow: 2px 2px 2px black;
+            word-wrap: break-word;
+        }
+        h2
+        {
+            color: white;
+            background-color: rgb(20, 115, 155);
+            padding: 4px 4px;
+            text-shadow: 2px 2px 2px black;
+            border-radius: 10px;
+            width: 30%;
+            box-shadow: 1px 1px 1px rgb(0, 0, 0);
+            word-wrap: break-word;
+        }
+        h1
+        {
+            color: rgb(0, 0, 0);
+            background-color: rgb(153, 212, 237);
+            padding: 4px 4px;
+            /* text-shadow: 1px 1px 1px gray; */
+            border-radius: 10px;
+            box-shadow: 1px 1px 1px rgb(0, 0, 0);
+            word-wrap: break-word;
+        }
+        #author
+        {
+            background-color: rgb(234, 169, 197);
+            color: black;
+            padding: 6px 6px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 2px black;
+            word-wrap: break-word;
+        }
+        #category
+        {
+            background-color: rgb(243, 209, 108);
+            color: rgb(0, 0, 0);
+            padding: 6px 6px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 2px black;
+            word-wrap: break-word;
+        }
+        .container3
+        {
+            display: flex;
+            flex-direction: row;
+            gap: 2%;
+        }
+    </style>
+</head>
+<body>
+    <div class="wholecontainer">
+    {% for i in articles %}
+        <div class="newscontainer">
+        <h1>{{i[0]}}</h1>
+        <h6 id="author">-{{i[1]}}</h6>
+        <p>{{i[2]}}</p>
+        <h6 id="category">Category:{{i[3]}}</h6>
+        <hr>
+        <div class="container3">
+        <form action="/delete" method="POST">
+            <input type="submit" name="submit" id="button1" value="delete                {{i[0]}}">
+        </form>
+        <form action="/update" method="POST">
+            <input type="submit" name="submit" id="button2" value="update                 {{i[0]}}">
+        </form>
+        </div>
+        </div>
+    {% endfor %}
+    </div>  
+</body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body
+        {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+        }
+        #button1
+        {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            color: white;
+            background-color: black;
+            border-radius: 10px;
+            border-style: solid;
+            box-shadow: 2px 2px 2px 2px grey;
+            border-bottom-color: rgb(255, 64, 0);
+            width: 80px;
+            padding: 20px;
+        }
+        #button2
+        {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            color: white;
+            background-color: black;
+            border-radius: 10px;
+            border-style: solid;
+            box-shadow: 2px 2px 2px 2px grey;
+            border-bottom-color: rgb(255, 64, 0);
+            width: 80px;
+            padding: 20px;
+        }
+        #button3
+        {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            color: white;
+            background-color: black;
+            border-radius: 10px;
+            border-style: solid;
+            box-shadow: 2px 2px 2px 2px grey;
+            border-bottom-color: rgb(255, 64, 0);
+            width: 90px;
+            padding: 20px;
+        }
+        #button4
+        {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            color: white;
+            background-color: black;
+            border-radius: 10px;
+            border-style: solid;
+            box-shadow: 2px 2px 2px 2px grey;
+            border-bottom-color: rgb(255, 64, 0);
+            width: 120px;
+            padding: 20px;
+        }
+        #button5
+        {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            color: white;
+            background-color: black;
+            border-radius: 10px;
+            border-style: solid;
+            box-shadow: 2px 2px 2px 2px grey;
+            border-bottom-color: rgb(255, 64, 0);
+            width: 85px;
+            padding: 20px;
+        }
+        #button6
+        {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            color: white;
+            background-color: black;
+            border-radius: 10px;
+            border-style: solid;
+            box-shadow: 2px 2px 2px 2px grey;
+            border-bottom-color: rgb(0, 187, 255);
+            width: 55px;
+            padding: 10px;
+        }
+        .textbox
+        {
+            border-radius: 10px;
+            box-shadow: 2px 2px 2px black;
+            border-style: none;
+            padding: 20px 20px;
+        }
+        #textbox1
+        {
+            border-radius: 10px;
+            box-shadow: 2px 2px 2px 2px black;
+            border-style: none;
+            padding: 20px 20px;
+            width: 50%;
+        }
+        .forms
+        {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .container
+        {
+            display: flex;
+            flex-direction: row;
+            gap: 5%;
+            flex-wrap: wrap;
+            row-gap: 15px;
+        }
+        .newscontainer
+        {
+            border-style: none;
+            width: 50%;
+            padding: 4px 4px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 2px 2px black;
+        }
+        .wholecontainer
+        {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="/home" method="POST">
+            <input type="submit" name="submit" value="Home                      {{user}}" id="button1">
+        </form>
+        <form action="/newsarticles" method="POST">
+            <input type="submit" name="submit" value="News                      {{user}}" id="button2">
+        </form>
+        <form action="/contact" method="POST">
+            <input type="submit" name="submit" value="Contact                   {{user}}" id="button3">
+        </form>
+        <form action="/addnews" method="POST">
+            <input type="submit" name="submit" value="Add_Article               {{user}}" id="button4">
+        </form>
+        <form action="/logout" method="POST">
+            <input type="submit" name="submit" value="logout" id="button5">
+        </form>
+        </div>
+        <br><br>
+    <form action="\news_added" method="POST">
+        <input type="text" name="Title" placeholder="Title" class="textbox">
+        <br><br>
+        <textarea name="Content" placeholder="Content" id="textbox1" cols="30" rows="10"></textarea>
+        <br><br>
+        <input type="text" name="Category" placeholder="Category" class="textbox">
+        <br><br>
+        <input type="submit" name="submit" value="Post          {{user}}" id="button6">
+    </form>
+</body>
+</html>

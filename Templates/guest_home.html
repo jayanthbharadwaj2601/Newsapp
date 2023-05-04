@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body
+        {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+        }
+        #button1
+        {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            color: white;
+            background-color: black;
+            border-radius: 10px;
+            border-style: solid;
+            box-shadow: 2px 2px 2px 2px grey;
+            border-bottom-color: rgb(255, 64, 0);
+            width: 80px;
+            padding: 20px;
+        }
+        #button2
+        {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            color: white;
+            background-color: black;
+            border-radius: 10px;
+            border-style: solid;
+            box-shadow: 2px 2px 2px 2px grey;
+            border-bottom-color: rgb(255, 64, 0);
+            width: 80px;
+            padding: 20px;
+        }
+        #button3
+        {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            color: white;
+            background-color: black;
+            border-radius: 10px;
+            border-style: solid;
+            box-shadow: 2px 2px 2px 2px grey;
+            border-bottom-color: rgb(255, 64, 0);
+            width: 90px;
+            padding: 20px;
+        }
+        #button4
+        {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            color: white;
+            background-color: black;
+            border-radius: 10px;
+            border-style: solid;
+            box-shadow: 2px 2px 2px 2px grey;
+            border-bottom-color: rgb(255, 64, 0);
+            width: 120px;
+            padding: 20px;
+        }
+        #button5
+        {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            color: white;
+            background-color: black;
+            border-radius: 10px;
+            border-style: solid;
+            box-shadow: 2px 2px 2px 2px grey;
+            border-bottom-color: rgb(255, 64, 0);
+            width: 85px;
+            padding: 20px;
+        }
+        .textbox
+        {
+            border-radius: 10px;
+            box-shadow: 2px 2px 2px black;
+            border-style: none;
+            padding: 20px 20px;
+        }
+        .forms
+        {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .container
+        {
+            display: flex;
+            flex-direction: row;
+            gap: 5%;
+            flex-wrap: wrap;
+            row-gap: 15px;
+        }
+        .newscontainer
+        {
+            border-style: none;
+            width: 50%;
+            padding: 4px 4px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 2px 2px black;
+        }
+        .wholecontainer
+        {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        address
+        {
+            color: white;
+            background-color: rgb(13, 84, 107);
+            width: 30%;
+            padding: 5px 5px;
+            text-shadow: 1px 1px 1px black;
+            border-radius: 10px;
+            box-shadow: 2px 2px 2px black;
+        }
+        #Mail
+        {
+            color: white;
+            background-color: rgb(13, 107, 35);
+            width: 30%;
+            padding: 5px 5px;
+            text-shadow: 1px 1px 1px black;
+            border-radius: 10px;
+            box-shadow: 2px 2px 2px black;
+        }
+        #Phone
+        {
+            color: white;
+            background-color: rgb(99, 13, 107);
+            width: 30%;
+            padding: 5px 5px;
+            text-shadow: 1px 1px 1px black;
+            border-radius: 10px;
+            box-shadow: 2px 2px 2px black;
+        }
+        h1
+        {
+            color: white;
+            background-color: rgb(20, 115, 155);
+            padding: 4px 4px;
+            text-shadow: 2px 2px 2px black;
+            border-radius: 10px;
+            box-shadow: 1px 1px 1px rgb(0, 0, 0);
+        }
+        h2
+        {
+            color: white;
+            background-color: rgb(20, 115, 155);
+            padding: 4px 4px;
+            text-shadow: 2px 2px 2px black;
+            border-radius: 10px;
+            word-wrap: break-word;
+            width: 30%;
+            box-shadow: 1px 1px 1px rgb(0, 0, 0);
+        }
+        #author
+        {
+            background-color: rgb(104, 9, 50);
+            color: white;
+            padding: 6px 6px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 2px black;
+        }
+        #category
+        {
+            background-color: rgb(104, 80, 9);
+            color: white;
+            padding: 6px 6px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 2px black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <form action="/guesthome" method="POST">
+        <input type="submit" name="submit" id="button1" value="Home">
+    </form>
+    <form action="/guestnews" method="POST">
+        <input type="submit" name="submit" id="button2" value="News">
+    </form>
+    <form action="/guestcontact" method="POST">
+        <input type="submit" name="submit" id="button3" value="Contact">
+    </form>
+    <form action="/logout" method="POST">
+        <input type="submit" name="submit" id="button4" value="Logout">
+    </form>
+    </div>
+    <h2>Welcome Guest! Login For a better experience</h2>
+</body>
+</html>
