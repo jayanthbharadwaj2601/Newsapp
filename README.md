@@ -1,6 +1,13 @@
 # Newsapp
 A news application in which users can add/read news articles
 <br>
+<h4>Special thanks to following tutorials:</h4><br>
+https://www.youtube.com/watch?v=Nvz7wN23-hw&embeds_referring_euri=https%3A%2F%2Fg91.tcsion.com%2F&source_ve_path=Mjg2NjY&feature=emb_logo
+<br>
+https://www.udemy.com/course/python-flask-for-beginners/?LSNPUBID=my9IzLo0578&ranEAID=my9IzLo0578&ranMID=39197&ranSiteID=my9IzLo0578-JvT.0EOhg._IQ8.VHanVuw
+<br>
+https://www.youtube.com/watch?v=tPxUSWTvZAs&t=463s
+<br>
 <h1> Landing Page:</h1>
 <img width="960" alt="landing_page" src="https://user-images.githubusercontent.com/73576290/236601790-023ddfda-ed8e-46be-9b51-4cba7826a2ac.PNG">
 <h1> User Login/signup:</h1>
